@@ -1,0 +1,23 @@
+# version: '3.4'
+
+# services:
+#   kioskochallenge:
+#     image: kioskochallenge
+#     build:
+#       context: .
+#       dockerfile: ./Dockerfile
+#     environment:
+#       NODE_ENV: production
+#     ports:
+#       - 3000:3000
+
+
+version: '3'
+services:
+  backend:
+    build: ./kioskoChallenge
+    ports:
+      - '3000:3000'
+    environment:
+      - PORT=3000
+
